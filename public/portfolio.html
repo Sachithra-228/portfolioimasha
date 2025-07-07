@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imasha | Aspiring Data Scientist</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-40px);}
+      to { opacity: 1; transform: translateX(0);}
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px);}
+      to { opacity: 1; transform: translateX(0);}
+    }
+    .animate-fadeInLeft {
+      animation: fadeInLeft 1s both;
+    }
+    .animate-fadeInRight {
+      animation: fadeInRight 1s both;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <span class="logo rose">Imasha</span>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" />
+        <label for="theme-switch" class="toggle-label" aria-label="Toggle dark mode">
+          <span class="icon-moon">&#9790;</span>
+          <span class="icon-sun">&#9728;</span>
+        </label>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="section home-section">
+    <div class="container home-flex">
+      <div class="home-text">
+        <h1>Hello, I'm <span class="rose">Imasha</span></h1>
+        <h2 class="subtitle">Aspiring Data Scientist</h2>
+        <div class="home-buttons">
+          <a href="imasha cv.pdf" class="btn" download>Download CV</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+      </div>
+      <div class="home-photo">
+        <img src="WhatsApp Image 2025-06-28 at 01.37.58_19b1134a.jpg" alt="Imasha's Photo" class="profile-photo" />
+      </div>
+    </div>
+  </section>
+  <div class="big-wave-divider">
+    <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:120px;display:block;">
+      <defs>
+        <linearGradient id="roseGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f9c6d1" />
+          <stop offset="100%" stop-color="#fff0f6" />
+        </linearGradient>
+      </defs>
+      <path d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" fill="url(#roseGradient)"/>
+    </svg>
+  </div>
+  <section id="about" class="section about-section reveal-on-scroll">
+    <div class="about-flex">
+      <div class="about-photo">
+        <img src="about.jpg" alt="Imasha Ranasinghe" class="about-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="about-img-fallback" style="display:none;align-items:center;justify-content:center;width:200px;height:200px;border-radius:50%;background:#fff0f6;border:6px solid #fff0f6;box-shadow:0 8px 32px rgba(249,198,209,0.25);font-size:3rem;color:#e75480;">
+          <span>&#128100;</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Imasha Ranasinghe, a passionate Data Science undergraduate based in Colombo, Sri Lanka. With a solid foundation in analytics, full-stack development, and a knack for problem-solving, I thrive on turning data into impactful solutions. Known for quick learning, academic dedication, and leadership in tech communities, I'm eager to bring value to real-world projects and grow through hands-on industry experience.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="big-wave-divider">
+    <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:120px;display:block;">
+      <defs>
+        <linearGradient id="roseGradient2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f9c6d1" />
+          <stop offset="100%" stop-color="#fff0f6" />
+        </linearGradient>
+      </defs>
+      <path d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" fill="url(#roseGradient2)"/>
+    </svg>
+  </div>
+  <section id="education" class="py-16 bg-white reveal-on-scroll">
+    <h2 class="text-4xl font-bold text-center mb-12">Education</h2>
+    <div class="relative max-w-3xl mx-auto">
+      <!-- Timeline bar and progress -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-pink-200 z-0 overflow-hidden">
+        <div id="timeline-progress" class="absolute left-0 top-0 w-1 bg-pink-500 z-10 transition-all duration-500" style="height: 0;"></div>
+      </div>
+      <!-- Timeline entries -->
+      <div class="space-y-16">
+        <!-- Entry 1: Left -->
+        <div class="flex flex-col md:flex-row items-center md:items-start group relative">
+          <div class="absolute left-1/2 transform -translate-x-1/2 z-20">
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-pink-500 border-4 border-white shadow-lg text-white text-lg font-bold">1</div>
+          </div>
+          <div class="w-full md:w-1/2 md:pr-8 flex justify-end md:justify-center">
+            <div class="flip-card w-full md:w-96">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-pink-100 rounded-xl p-6 shadow-md flex flex-col items-center justify-center h-full">
+                  <span class="text-3xl mb-2">🎓</span>
+                  <span class="font-semibold text-lg text-center">BSc (Hons) in Information Technology - Data Science Specialization</span>
+                </div>
+                <div class="flip-card-back bg-pink-100 rounded-xl p-6 shadow-md flex flex-col justify-center h-full">
+                  <div class="text-pink-500 font-medium mb-1">SLIIT, Malabe, Sri Lanka</div>
+                  <div class="text-sm text-gray-500 mb-1">GPA: 3.00 | Jun 2023 - Present</div>
+                  <div class="text-sm text-gray-700 mb-1">
+                    <span class="font-semibold">Relevant Coursework:</span> Probability & Statistics, Data Structures & Algorithms, Database Management Systems, Information Systems & Data Modelling, Machine Learning (upcoming)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block w-1/12 flex-shrink-0"></div>
+        </div>
+        <!-- Entry 2: Right -->
+        <div class="flex flex-col md:flex-row items-center md:items-start group relative">
+          <div class="absolute left-1/2 transform -translate-x-1/2 z-20">
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-pink-500 border-4 border-white shadow-lg text-white text-lg font-bold">2</div>
+          </div>
+          <div class="hidden md:block w-1/12 flex-shrink-0"></div>
+          <div class="w-full md:w-1/2 md:pl-8 flex justify-start md:justify-center">
+            <div class="flip-card w-full md:w-96">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-pink-100 rounded-xl p-6 shadow-md flex flex-col items-center justify-center h-full">
+                  <span class="text-3xl mb-2">🎓</span>
+                  <span class="font-semibold text-lg text-center">GCE Advanced Level, Art Stream</span>
+                </div>
+                <div class="flip-card-back bg-pink-100 rounded-xl p-6 shadow-md flex flex-col justify-center h-full">
+                  <div class="text-pink-500 font-medium mb-1">Vishaka Balika School - Sapugaskanda</div>
+                  <div class="text-sm text-gray-500 mb-1">2021/2022</div>
+                  <div class="text-sm text-gray-700 mb-1">
+                    <span class="font-semibold">Subjects:</span> Sinhala - A, Dancing - B, ICT - C
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Entry 3: Left -->
+        <div class="flex flex-col md:flex-row items-center md:items-start group relative">
+          <div class="absolute left-1/2 transform -translate-x-1/2 z-20">
+            <div class="w-8 h-8 flex items-center justify-center rounded-full bg-pink-500 border-4 border-white shadow-lg text-white text-lg font-bold">3</div>
+          </div>
+          <div class="w-full md:w-1/2 md:pr-8 flex justify-end md:justify-center">
+            <div class="flip-card w-full md:w-96">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-pink-100 rounded-xl p-6 shadow-md flex flex-col items-center justify-center h-full">
+                  <span class="text-3xl mb-2">🎓</span>
+                  <span class="font-semibold text-lg text-center">GCE Ordinary Level</span>
+                </div>
+                <div class="flip-card-back bg-pink-100 rounded-xl p-6 shadow-md flex flex-col justify-center h-full">
+                  <div class="text-pink-500 font-medium mb-1">Vishaka Balika School - Sapugaskanda</div>
+                  <div class="text-sm text-gray-500 mb-1">2018</div>
+                  <div class="text-sm text-gray-700 mb-1">Successfully Completed</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block w-1/12 flex-shrink-0"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="big-wave-divider">
+    <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:120px;display:block;">
+      <defs>
+        <linearGradient id="roseGradient3" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f9c6d1" />
+          <stop offset="100%" stop-color="#fff0f6" />
+        </linearGradient>
+      </defs>
+      <path d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" fill="url(#roseGradient3)"/>
+    </svg>
+  </div>
+  <section id="skills" class="section skills-section reveal-on-scroll">
+    <div class="container">
+      <h2 class="text-3xl font-bold text-center mb-8">Technical Skills</h2>
+      <!-- Tabs -->
+      <div class="flex justify-center mb-8">
+        <button class="tab-btn px-6 py-2 rounded-t-lg font-semibold text-pink-500 bg-pink-100 border-b-2 border-pink-500 focus:outline-none" onclick="showSkillsTab('languages')" id="tab-languages">Languages</button>
+        <button class="tab-btn px-6 py-2 rounded-t-lg font-semibold text-pink-500 bg-pink-50 border-b-2 border-transparent focus:outline-none" onclick="showSkillsTab('databases')" id="tab-databases">Databases</button>
+        <button class="tab-btn px-6 py-2 rounded-t-lg font-semibold text-pink-500 bg-pink-50 border-b-2 border-transparent focus:outline-none" onclick="showSkillsTab('frameworks')" id="tab-frameworks">Frameworks</button>
+        <button class="tab-btn px-6 py-2 rounded-t-lg font-semibold text-pink-500 bg-pink-50 border-b-2 border-transparent focus:outline-none" onclick="showSkillsTab('tools')" id="tab-tools">Tools</button>
+      </div>
+      <!-- Skills Content -->
+      <div id="skills-languages" class="skills-tab-content grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('python')">Python</div>
+        <div class="code-example" id="code-python" style="display:none;"><pre><code>print("Hello, World!")</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('java')">Java</div>
+        <div class="code-example" id="code-java" style="display:none;"><pre><code>public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('javascript')">JavaScript</div>
+        <div class="code-example" id="code-javascript" style="display:none;"><pre><code>console.log("Hello, World!");</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('r')">R</div>
+        <div class="code-example" id="code-r" style="display:none;"><pre><code>print("Hello, World!")</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('sql')">SQL</div>
+        <div class="code-example" id="code-sql" style="display:none;"><pre><code>SELECT * FROM students;</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('htmlcss')">HTML/CSS</div>
+        <div class="code-example" id="code-htmlcss" style="display:none;"><pre><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('php')">PHP</div>
+        <div class="code-example" id="code-php" style="display:none;"><pre><code>&lt;?php
+echo "Hello, World!";
+?&gt;</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('kotlin')">Kotlin</div>
+        <div class="code-example" id="code-kotlin" style="display:none;"><pre><code>fun main() {
+  println("Hello, World!")
+}</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('c')">C/C++</div>
+        <div class="code-example" id="code-c" style="display:none;"><pre><code>#include &lt;stdio.h&gt;
+int main() {
+  printf("Hello, World!\n");
+  return 0;
+}</code></pre></div>
+      </div>
+      <div id="skills-databases" class="skills-tab-content grid grid-cols-2 md:grid-cols-3 gap-4 hidden">
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('mysql')">MySQL</div>
+        <div class="code-example" id="code-mysql" style="display:none;"><pre><code>SELECT * FROM users WHERE active = 1;</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('mongodb')">MongoDB</div>
+        <div class="code-example" id="code-mongodb" style="display:none;"><pre><code>db.users.find({ active: true })</code></pre></div>
+      </div>
+      <div id="skills-frameworks" class="skills-tab-content grid grid-cols-2 md:grid-cols-3 gap-4 hidden">
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('react')">React</div>
+        <div class="code-example" id="code-react" style="display:none;"><pre><code>function App() {
+  return &lt;h1&gt;Hello, World!&lt;/h1&gt;;
+}</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('node')">Node.js/Express</div>
+        <div class="code-example" id="code-node" style="display:none;"><pre><code>const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Hello, World!'));
+app.listen(3000);</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('android')">Android Studio</div>
+        <div class="code-example" id="code-android" style="display:none;"><pre><code>// MainActivity.kt
+fun main() {
+  println("Hello, Android!")
+}</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('swing')">Java Swing</div>
+        <div class="code-example" id="code-swing" style="display:none;"><pre><code>JFrame frame = new JFrame("Hello");
+frame.setVisible(true);</code></pre></div>
+      </div>
+      <div id="skills-tools" class="skills-tab-content grid grid-cols-2 md:grid-cols-3 gap-4 hidden">
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('git')">Git & GitHub</div>
+        <div class="code-example" id="code-git" style="display:none;"><pre><code>git init
+git add .
+git commit -m "First commit"</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('figma')">Figma</div>
+        <div class="code-example" id="code-figma" style="display:none;"><pre><code>// Figma is a design tool, not a code tool.
+// Example: Design a button and export as SVG.</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('excel')">Excel</div>
+        <div class="code-example" id="code-excel" style="display:none;"><pre><code>=SUM(A1:A10)</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('linux')">Linux/Bash</div>
+        <div class="code-example" id="code-linux" style="display:none;"><pre><code>ls -la
+cd /home/user</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('vscode')">VS Code</div>
+        <div class="code-example" id="code-vscode" style="display:none;"><pre><code>// VS Code is an editor, not a code tool.
+// Example: Open Command Palette (Ctrl+Shift+P)</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('eclipse')">Eclipse</div>
+        <div class="code-example" id="code-eclipse" style="display:none;"><pre><code>// Eclipse is an IDE, not a code tool.
+// Example: Create a new Java project.</code></pre></div>
+        <div class="skill-badge cursor-pointer" onclick="showCodeExample('intellij')">IntelliJ IDEA</div>
+        <div class="code-example" id="code-intellij" style="display:none;"><pre><code>// IntelliJ IDEA is an IDE, not a code tool.
+// Example: Refactor code with Alt+Enter.</code></pre></div>
+      </div>
+    </div>
+  </section>
+  <div class="big-wave-divider">
+    <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:120px;display:block;">
+      <defs>
+        <linearGradient id="roseGradient4" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f9c6d1" />
+          <stop offset="100%" stop-color="#fff0f6" />
+        </linearGradient>
+      </defs>
+      <path d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" fill="url(#roseGradient4)"/>
+    </svg>
+  </div>
+  <section id="projects" class="section projects-section reveal-on-scroll">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="artsphere.png" alt="ARTSPHERE project screenshot" class="project-img">
+          <h3>ARTSPHERE - Online Art Gallery</h3>
+          <p>Building an online art gallery including online exhibitions, auctions, bidding system, and art selling features. Designed RESTful APIs with Node.js/Express and interactive dashboards in React with data persistence using MongoDB.</p>
+          <span class="tech">MERN Stack (ongoing)</span>
+          <a href="https://github.com/imasha" class="project-link" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="vitacore.png" alt="VitaCore App screenshot" class="project-img">
+          <h3>VitaCore App (Diet Plan App)</h3>
+          <p>A smart diet planning app that helps users and nutritionists create, manage, and follow personalized meal plans for healthier living. UI/UX project for Android (Kotlin).</p>
+          <span class="tech">Android (Kotlin)</span>
+          <a href="https://github.com/imasha" class="project-link" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="tameru.png" alt="Tameru project screenshot" class="project-img">
+          <h3>Tameru (Personal Expense Tracker)</h3>
+          <p>Mobile app to log income/expenses, view analytics, and set budget alerts. Data stored locally with shared preferences; UI built on Material Components.</p>
+          <span class="tech">Android Mobile App</span>
+          <a href="https://github.com/imasha" class="project-link" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="event management.png" alt="Event Management System screenshot" class="project-img">
+          <h3>Online Event Management System</h3>
+          <p>Java desktop/web app to streamline online event booking processes for local services. Java Swing front-end with local MySQL DB via SQL Workbench.</p>
+          <span class="tech">Java & SQL</span>
+          <a href="https://github.com/imasha" class="project-link" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="online exam.png" alt="Online Examination System screenshot" class="project-img">
+          <h3>Online Examination System</h3>
+          <p>Java desktop/web app to perform examination processes. Java Swing front-end with local MySQL DB via SQL Workbench.</p>
+          <span class="tech">Java & SQL</span>
+          <a href="https://github.com/imasha" class="project-link" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="boatsafari.png" alt="Boat Safari System screenshot" class="project-img">
+          <h3>Boat Safari System</h3>
+          <p>Online platform for examination processes. Server login in PHP/MySQL with real time updates.</p>
+          <span class="tech">HTML/CSS, JavaScript & PHP</span>
+          <a href="https://github.com/imasha" class="project-link" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="big-wave-divider">
+    <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:120px;display:block;">
+      <defs>
+        <linearGradient id="roseGradient5" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f9c6d1" />
+          <stop offset="100%" stop-color="#fff0f6" />
+        </linearGradient>
+      </defs>
+      <path d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" fill="url(#roseGradient5)"/>
+    </svg>
+  </div>
+  <section id="certifications" class="section certifications-section reveal-on-scroll">
+    <div class="container cert-flex">
+      <div class="cert-list-container">
+        <h2>Certifications & Awards</h2>
+        <div class="cert-cards">
+          <div class="cert-card">
+            <div>
+              <div class="cert-title">The Certificate Course in English language</div>
+              <div class="cert-issuer">University of Colombo</div>
+              <span class="cert-badge merit">Merit Pass</span>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div>
+              <div class="cert-title">Applied Information Technology</div>
+              <div class="cert-issuer">Sri Lanka Telecom</div>
+              <span class="cert-badge distinction">Distinction Pass</span>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div>
+              <div class="cert-title">Cambridge English (PET)</div>
+              <div class="cert-issuer">British Council Sri Lanka</div>
+              <span class="cert-badge merit">Merit Pass</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cert-img-container">
+        <img src="certification.jpg" alt="Certification" class="cert-img">
+      </div>
+    </div>
+  </section>
+  <div class="big-wave-divider">
+    <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:120px;display:block;">
+      <defs>
+        <linearGradient id="roseGradient6" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f9c6d1" />
+          <stop offset="100%" stop-color="#fff0f6" />
+        </linearGradient>
+      </defs>
+      <path d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" fill="url(#roseGradient6)"/>
+    </svg>
+  </div>
+  <section id="contact" class="section contact-section reveal-on-scroll">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="mailto:imaranasinghe2002@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/imasha" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/imasha-ranasinghe-306654253/" target="_blank">LinkedIn</a>
+        <a href="mailto:imaranasinghe2002@gmail.com">Email</a>
+        <span style="margin-left:16px; color:#888;">Colombo, Sri Lanka | +94 71 600 7975</span>
+      </div>
+    </div>
+  </section>
+  <script>
+  // Scroll-triggered reveal animation for About Me section
+  function revealOnScroll() {
+    var reveals = document.querySelectorAll('.reveal-on-scroll');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 100;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+  </script>
+  <script>
+  window.addEventListener('scroll', function() {
+    var section = document.getElementById('education');
+    var progress = document.getElementById('timeline-progress');
+    var rect = section.getBoundingClientRect();
+    var windowHeight = window.innerHeight;
+    var sectionHeight = section.offsetHeight;
+    var scrollY = window.scrollY || window.pageYOffset;
+
+    // Calculate how much of the section is visible
+    var sectionTop = rect.top + scrollY;
+    var sectionBottom = sectionTop + sectionHeight;
+    var visible = Math.min(windowHeight, sectionBottom - scrollY) - Math.max(0, sectionTop - scrollY);
+    var percent = Math.max(0, Math.min(1, visible / sectionHeight));
+
+    // Animate the progress bar
+    progress.style.height = (percent * 100) + '%';
+  });
+  </script>
+  <script>
+  function showSkillsTab(tab) {
+    const tabs = ['languages', 'databases', 'frameworks', 'tools'];
+    tabs.forEach(t => {
+      document.getElementById('skills-' + t).classList.add('hidden');
+      document.getElementById('tab-' + t).classList.remove('bg-pink-100', 'border-pink-500');
+      document.getElementById('tab-' + t).classList.add('bg-pink-50', 'border-transparent');
+    });
+    document.getElementById('skills-' + tab).classList.remove('hidden');
+    document.getElementById('tab-' + tab).classList.add('bg-pink-100', 'border-pink-500');
+    document.getElementById('tab-' + tab).classList.remove('bg-pink-50', 'border-transparent');
+  }
+  // Set default tab
+  showSkillsTab('languages');
+  </script>
+  <script>
+  function showCodeExample(skill) {
+    // Hide all code examples
+    document.querySelectorAll('.code-example').forEach(function(el) {
+      el.style.display = 'none';
+    });
+    // Toggle the selected code example
+    var codeBox = document.getElementById('code-' + skill);
+    if (codeBox) {
+      codeBox.style.display = (codeBox.style.display === 'block') ? 'none' : 'block';
+    }
+  }
+  </script>
+</body>
+</html> 
